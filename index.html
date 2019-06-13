@@ -17,18 +17,20 @@
     <link rel="stylesheet" href="js/slick/slick.css">
     <link rel="stylesheet" href="js/slick/slick-theme.css">
     <!--  Main styles -->
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="js/select-2/css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+<!--Main-->
     <main class="main-section w-100">
         <div class="main-overlay h-100 w-100">
             <div class="bg-blocks h-100 w-100"></div>
         </div>
+        <!--Main Header-->
         <header class="main-header">
             <div class="header-top">
-                <div class="container-fluid">
+                <div class="container-fluid max-w-1700">
                     <div class="row">
                         <div class="col-lg-2 offset-lg-10 col-md-2 offset-md-10">
                             <div class="language-container">
@@ -40,14 +42,22 @@
                                 <!--                                    <option value=""></option>-->
                                 <!--                                    <option value=""></option>-->
                                 <!--                                 </select>-->
-                                <p>English</p>
+                                <!-- <p>English</p> -->
+                                <!-- <i class="fas fa-angle-down"></i> -->
+                                <select class="language_select">
+                                    <option value="O1" data-badge="">English</option>
+                                    <option value="O2" data-badge="">Deutsch</option>
+                                    <option value="O3" data-badge="">Espanol</option>
+                                    <option value="O4" data-badge="">France</option>
+                                    <option value="O5" data-badge="">Russian</option>
+                                </select>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="header-bottom">
-                <div class="container-fluid">
+                <div class="container-fluid max-w-1700">
                     <div class="row">
                         <div class="col-md-1">
                             <div class="logo-box">
@@ -56,25 +66,41 @@
                         </div>
                         <div class="col-md-11">
                             <nav class="navigation d-flex align-items-center h-100 w-100">
-                                <div class="navbar-header">
+                                <div class="navbar-header d-flex align-items-center h-100">
                                     <!-- Toggle Button -->
                                     <button class="navbar-toggle">
-                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar bar-one"></span>
+                                        <span class="icon-bar bar-two"></span>
+                                        <span class="icon-bar bar-tree"></span>
+                                        <span class="icon-bar bar-four"></span>
                                     </button>
                                     <!-- Toggle Button END-->
                                 </div>
+                                    <!-- Main navigation menu -->
                                 <ul class="d-flex justify-content-end align-items-center h-100">
-                                    <li><a href="#">Home</a></li>
+                                    <li>
+                                        <a href="#">Home</a>
+                                        <ul class="home-page-dropdown-list">
+                                            <li><a href="#">Testing item</a></li>
+                                            <li><a href="#">Testing item</a></li>
+                                            <li><a href="#">Testing item</a></li>
+                                            <li><a href="#">Testing item</a></li>
+                                            <li><a href="#">Testing item</a></li>
+                                        </ul>
+                                    </li>
+
                                     <li><a href="#">Properties</a></li>
                                     <li><a href="#">About</a></li>
                                     <li><a href="#">Contact</a></li>
                                 </ul>
+                                    <!-- Main navigation menu END-->
                             </nav>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+        <!--Main Header END-->
 
 <!--Main button-->
         <div class="main-button-container">
@@ -92,71 +118,12 @@
             </div>
 <!-- end fixed container arrow down -->
     </main>
+<!--Main END-->
 
     <!-- <div class="container-fluid">
         <div class="row"> -->
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 background_search_container">
         <div class="wrap_select_search">
-            <!-- <div class="select_container">
-                <div class="placeholder_search_select"> All Cityes </div>
-                <i class="fas fa-angle-down"></i>
-                <select name="" multiple="multiple">
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">New_option</option>
-                </select>
-            </div>
-            <div class="select_container">
-                <div class="placeholder_search_select"> Type </div>
-                <i class="fas fa-angle-down"></i>
-                <select name="" multiple="multiple">
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                </select>
-            </div>
-            <div class="select_container">
-                <div class="placeholder_search_select"> Market </div>
-                <i class="fas fa-angle-down"></i>
-                <select name="" multiple="multiple">
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                </select>
-            </div>
-            <div class="select_container">
-                <div class="placeholder_search_select"> Bedrooms </div>
-                <i class="fas fa-angle-down"></i>
-                <select name="" multiple="multiple">
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                </select>
-            </div>
-            <div class="select_container">
-                <div class="placeholder_search_select"> Bathrooms </div>
-                <i class="fas fa-angle-down"></i>
-                <select name="" multiple="multiple">
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                </select>
-            </div>
-            <div class="select_container">
-                <div class="placeholder_search_select"> Price </div>
-                <i class="fas fa-angle-down"></i>
-                <select name="" multiple="multiple">
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                    <option value="">Testing_option</option>
-                </select>
-            </div> -->
             <div class="select_container">
                 <div class="placeholder_search_select"> All Cityes </div>
                 <i class="fas fa-angle-down"></i>
@@ -224,12 +191,41 @@
                 </select>
             </div>
             <div class="select_container wrap_search_input">
-                <input type="text" class="search_input" id="fff">
-                <!-- <label for="fff">Label</label> -->
+                <button>Search</button>
             </div>
         </div>
     </div>
 
+    <section class="section">
+        <div>
+            
+        </div>
+    </section>
+
+<!--Video Section-->
+<section class="section section-video">
+        <div class="container">
+            <div class="content-video-section">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="subscribe-box">
+                            <h3>Как купить недвижимость в Испании</h3>
+                            <p class="text-inform">Research shows that chatbots can increase conversion up to 1/4 - see how!</p>
+                            <p class="text-inform">Next time your customer faces an issue, they will contact you
+                                instead of your competitor.</p>
+                            <button class="btn main-btn red-btn"><span>Subscribe</span></button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="video-box">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!--Video Section END-->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
