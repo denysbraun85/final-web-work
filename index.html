@@ -1,94 +1,246 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>New design WTG</title>
     <!--  Favicon  -->
     <link rel="icon" href="img/favicon/favicon-32x32.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <link rel="stylesheet" href="libs/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="js/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="libs/magnific-popup/dist/magnific-popup.css">
-    <link rel="stylesheet" href="libs/slick/slick.css">
-    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="js/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="js/slick/slick.css">
+    <link rel="stylesheet" href="js/slick/slick-theme.css">
     <!--  Main styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="js/select-2/css/select2.min.css">
 </head>
-<body>
 
-    <header class="main-header">
-        <div class="container-fluid">
+<body>
+    <main class="main-section w-100">
+        <div class="main-overlay h-100 w-100">
+            <div class="bg-blocks h-100 w-100"></div>
+        </div>
+        <header class="main-header">
             <div class="header-top">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-6">
-                        <div class="language-container">
-                            <!--                        <select name="language " id="">-->
-                            <!--                            <option value=""></option>-->
-                            <!--                            <option value=""></option>-->
-                            <!--                            <option value=""></option>-->
-                            <!--                            <option value=""></option>-->
-                            <!--                            <option value=""></option>-->
-                            <!--                            <option value=""></option>-->
-                            <!--                        </select>-->
-                            <p>English</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-2 offset-lg-10 col-md-2 offset-md-10">
+                            <div class="language-container">
+                                <!--                                <select name="language " id="">-->
+                                <!--                                   <option value=""></option>-->
+                                <!--                                    <option value=""></option>-->
+                                <!--                                    <option value=""></option>-->
+                                <!--                                    <option value=""></option>-->
+                                <!--                                    <option value=""></option>-->
+                                <!--                                    <option value=""></option>-->
+                                <!--                                 </select>-->
+                                <p>English</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="header-bottom">
-                <div class="row">
-                    <div class="col-lg-2 col-md-2">
-                        <div class="logo-box">
-                            <a href="#"><img src="img/logo/logo-white.svg" alt="logo"></a>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <div class="logo-box">
+                                <a href="#"><img class="w-100" src="img/logo/logo-white.svg" alt="logo"></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-10 col-md-10">
-                        <nav class="navigation">
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Properties</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
-                        </nav>
+                        <div class="col-md-11">
+                            <nav class="navigation d-flex align-items-center h-100 w-100">
+                                <div class="navbar-header">
+                                    <!-- Toggle Button -->
+                                    <button class="navbar-toggle">
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <!-- Toggle Button END-->
+                                </div>
+                                <ul class="d-flex justify-content-end align-items-center h-100">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Properties</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <button class="main-btn w-50 m-auto"><span>Связаться с нами</span></button>
+<!--Main button-->
+        <div class="main-button-container">
+            <button class="main-btn w-100 m-auto"><span>Связаться с нами</span></button>
+        </div>
+<!--Main button END-->
+
+<!-- fixed container arrow down -->
+         <div class="wrap_arrow_down">
+                <div class="arrow_down">
+                    <a href="#">
+                        <img src="./img/svg/arrowdown.svg" alt="arrow">
+                    </a>
+                </div>
+            </div>
+<!-- end fixed container arrow down -->
+    </main>
+
+    <!-- <div class="container-fluid">
+        <div class="row"> -->
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 background_search_container">
+        <div class="wrap_select_search">
+            <!-- <div class="select_container">
+                <div class="placeholder_search_select"> All Cityes </div>
+                <i class="fas fa-angle-down"></i>
+                <select name="" multiple="multiple">
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">New_option</option>
+                </select>
+            </div>
+            <div class="select_container">
+                <div class="placeholder_search_select"> Type </div>
+                <i class="fas fa-angle-down"></i>
+                <select name="" multiple="multiple">
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                </select>
+            </div>
+            <div class="select_container">
+                <div class="placeholder_search_select"> Market </div>
+                <i class="fas fa-angle-down"></i>
+                <select name="" multiple="multiple">
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                </select>
+            </div>
+            <div class="select_container">
+                <div class="placeholder_search_select"> Bedrooms </div>
+                <i class="fas fa-angle-down"></i>
+                <select name="" multiple="multiple">
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                </select>
+            </div>
+            <div class="select_container">
+                <div class="placeholder_search_select"> Bathrooms </div>
+                <i class="fas fa-angle-down"></i>
+                <select name="" multiple="multiple">
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                </select>
+            </div>
+            <div class="select_container">
+                <div class="placeholder_search_select"> Price </div>
+                <i class="fas fa-angle-down"></i>
+                <select name="" multiple="multiple">
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                    <option value="">Testing_option</option>
+                </select>
+            </div> -->
+            <div class="select_container">
+                <div class="placeholder_search_select"> All Cityes </div>
+                <i class="fas fa-angle-down"></i>
+                <select class="js-select2" multiple="multiple">
+                    <option value="O1" data-badge="">Option1</option>
+                    <option value="O2" data-badge="">Option2</option>
+                    <option value="O3" data-badge="">Option3</option>
+                    <option value="O4" data-badge="">Option4</option>
+                    <option value="O5" data-badge="">Option5</option>
+                </select>
+            </div>
+            <div class="select_container">
+                <div class="placeholder_search_select"> Type </div>
+                <i class="fas fa-angle-down"></i>
+                <select class="js-select2" multiple="multiple">
+                    <option value="O1" data-badge="">Option1</option>
+                    <option value="O2" data-badge="">Option2</option>
+                    <option value="O3" data-badge="">Option3</option>
+                    <option value="O4" data-badge="">Option4</option>
+                    <option value="O5" data-badge="">Option5</option>
+                </select>
+            </div>
+            <div class="select_container">
+                <div class="placeholder_search_select"> Market </div>
+                <i class="fas fa-angle-down"></i>
+                <select class="js-select2" multiple="multiple">
+                    <option value="O1" data-badge="">Option1</option>
+                    <option value="O2" data-badge="">Option2</option>
+                    <option value="O3" data-badge="">Option3</option>
+                    <option value="O4" data-badge="">Option4</option>
+                    <option value="O5" data-badge="">Option5</option>
+                </select>
+            </div>
+            <div class="select_container">
+                <div class="placeholder_search_select"> Bedrooms </div>
+                <i class="fas fa-angle-down"></i>
+                <select class="js-select2" multiple="multiple">
+                    <option value="O1" data-badge="">Option1</option>
+                    <option value="O2" data-badge="">Option2</option>
+                    <option value="O3" data-badge="">Option3</option>
+                    <option value="O4" data-badge="">Option4</option>
+                    <option value="O5" data-badge="">Option5</option>
+                </select>
+            </div>
+            <div class="select_container">
+                <div class="placeholder_search_select"> Bathrooms </div>
+                <i class="fas fa-angle-down"></i>
+                <select class="js-select2" multiple="multiple">
+                    <option value="O1" data-badge="">Option1</option>
+                    <option value="O2" data-badge="">Option2</option>
+                    <option value="O3" data-badge="">Option3</option>
+                    <option value="O4" data-badge="">Option4</option>
+                    <option value="O5" data-badge="">Option5</option>
+                </select>
+            </div>
+            <div class="select_container">
+                <div class="placeholder_search_select"> Price </div>
+                <i class="fas fa-angle-down"></i>
+                <select class="js-select2" multiple="multiple">
+                    <option value="O1" data-badge="">Option1</option>
+                    <option value="O2" data-badge="">Option2</option>
+                    <option value="O3" data-badge="">Option3</option>
+                    <option value="O4" data-badge="">Option4</option>
+                    <option value="O5" data-badge="">Option5</option>
+                </select>
+            </div>
+            <div class="select_container wrap_search_input">
+                <input type="text" class="search_input" id="fff">
+                <!-- <label for="fff">Label</label> -->
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-1">
-                <a href="#">
-                    <div class="arrow_down">
-                        <img src="./img/svg/arrowdown.svg" alt="">
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="libs/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
-<script src="libs/slick/slick.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="js/select-2/js/select2.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
