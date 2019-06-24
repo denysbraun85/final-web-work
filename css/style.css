@@ -1243,9 +1243,6 @@ body {
         .section-reason .reason-box-inside .reason-box-front-side .reason-box-content span,
         .section-reason .reason-box-inside .reason-box-back-side .reason-box-content span {
           font-size: 25px;
-          border: 1px solid #FFFFFF;
-          -webkit-border-radius: 2px;
-                  border-radius: 2px;
           padding: 2px 10px; }
         .section-reason .reason-box .reason-box-front-side .reason-box-content p,
         .section-reason .reason-box .reason-box-back-side .reason-box-content p,
