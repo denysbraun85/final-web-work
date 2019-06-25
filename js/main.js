@@ -71,7 +71,7 @@ $(document).ready(function () {
 /*====================================================================
                          Toggle menu function
  =====================================================================*/
-$('.navbar-toggle').on('click', function () {
+$('.nav-bar-toggle').on('click', function () {
     $(this).toggleClass('active-toggle');
     console.log('alert');
 });
@@ -151,3 +151,33 @@ $('.manager-slider').slick({
 /*====================================================================
                                  End
  =====================================================================*/
+
+/*====================================================================
+                         Video-background function
+ =====================================================================*/
+$('.video-bg').bgVideo({
+    pauseAfter: 0,
+    fadeIn: 0,
+    showPausePlay: false
+});
+/*====================================================================
+                                 End
+ =====================================================================*/
+
+//Update Header Style and Scroll to Top
+// function headerStyle() {
+//     if($('.main-header').length){
+//         var windowpos = $(window).scrollTop();
+//         var siteHeader = $('.main-header');
+//         var scrollLink = $('.scroll-top');
+//         if (windowpos >= 110) {
+//             siteHeader.addClass('fixed-header');
+//             scrollLink.fadeIn(300);
+//         } else {
+//             siteHeader.removeClass('fixed-header');
+//             scrollLink.fadeOut(300);
+//         }
+//     }
+// }
+//
+// headerStyle();
