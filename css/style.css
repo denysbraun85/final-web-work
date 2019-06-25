@@ -543,7 +543,7 @@ body {
             -webkit-transform-origin: 5%;
                 -ms-transform-origin: 5%;
                     transform-origin: 5%;
-            top: 35%; }
+            top: 36%; }
           .main-section .main-header .header-bottom .navigation .navbar-header .nav-bar-toggle .bar-two {
             top: 50%;
             left: 50%;
@@ -568,24 +568,24 @@ body {
           height: 3px;
           width: 25px;
           top: 34%;
-          left: 30%; }
+          left: 32%; }
         .main-section .main-header .header-bottom .navigation .navbar-header .active-toggle .bar-two {
           -webkit-transform: rotate(-45deg);
               -ms-transform: rotate(-45deg);
                   transform: rotate(-45deg);
           height: 3px;
           width: 25px;
-          left: 22%;
-          top: 49%;
+          left: 26%;
+          top: 50%;
           background-color: transparent; }
         .main-section .main-header .header-bottom .navigation .navbar-header .active-toggle .bar-tree {
           -webkit-transform: rotate(45deg);
               -ms-transform: rotate(45deg);
                   transform: rotate(45deg);
           height: 3px;
-          top: 49%;
+          top: 50%;
           width: 25px;
-          left: 23%;
+          left: 26%;
           background-color: transparent; }
         .main-section .main-header .header-bottom .navigation .navbar-header .active-toggle .bar-four {
           -webkit-transform: rotate(-45deg);
@@ -593,7 +593,7 @@ body {
                   transform: rotate(-45deg);
           height: 3px;
           width: 25px;
-          left: 30%;
+          left: 32%;
           top: 66%; }
     .main-section .main-header .header-top .language-container {
       display: -webkit-box;
@@ -1278,13 +1278,13 @@ body {
         .section-reason .reason-box .reason-box-back-side .reason-box-content h6,
         .section-reason .reason-box-inside .reason-box-front-side .reason-box-content h6,
         .section-reason .reason-box-inside .reason-box-back-side .reason-box-content h6 {
-          font-size: 30px;
+          font-size: 25px;
           margin-bottom: 20px; }
         .section-reason .reason-box .reason-box-front-side .reason-box-content span,
         .section-reason .reason-box .reason-box-back-side .reason-box-content span,
         .section-reason .reason-box-inside .reason-box-front-side .reason-box-content span,
         .section-reason .reason-box-inside .reason-box-back-side .reason-box-content span {
-          font-size: 25px;
+          font-size: 18px;
           padding: 2px 10px; }
         .section-reason .reason-box .reason-box-front-side .reason-box-content p,
         .section-reason .reason-box .reason-box-back-side .reason-box-content p,
