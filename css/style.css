@@ -543,7 +543,7 @@ body {
             -webkit-transform-origin: 5%;
                 -ms-transform-origin: 5%;
                     transform-origin: 5%;
-            top: 33%; }
+            top: 35%; }
           .main-section .main-header .header-bottom .navigation .navbar-header .nav-bar-toggle .bar-two {
             top: 50%;
             left: 50%;
@@ -567,6 +567,7 @@ body {
                   transform: rotate(45deg);
           height: 3px;
           width: 25px;
+          top: 34%;
           left: 30%; }
         .main-section .main-header .header-bottom .navigation .navbar-header .active-toggle .bar-two {
           -webkit-transform: rotate(-45deg);
@@ -593,7 +594,7 @@ body {
           height: 3px;
           width: 25px;
           left: 30%;
-          top: 65%; }
+          top: 66%; }
     .main-section .main-header .header-top .language-container {
       display: -webkit-box;
       display: -webkit-flex;
