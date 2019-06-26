@@ -103,8 +103,7 @@ $('.feedback-slider').slick({
     arrows: false,
     autoplay: true,
     autoplaySpeed: 5000,
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 992,
             settings: {
                 slidesToShow: 2
@@ -127,8 +126,7 @@ $('.manager-slider').slick({
     arrows: false,
     // autoplay: true,
     // autoplaySpeed: 5000,
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 992,
             settings: {
                 slidesToShow: 3
@@ -164,20 +162,123 @@ $('.video-bg').bgVideo({
                                  End
  =====================================================================*/
 
-//Update Header Style and Scroll to Top
-// function headerStyle() {
-//     if($('.main-header').length){
-//         var windowpos = $(window).scrollTop();
-//         var siteHeader = $('.main-header');
-//         var scrollLink = $('.scroll-top');
-//         if (windowpos >= 110) {
-//             siteHeader.addClass('fixed-header');
-//             scrollLink.fadeIn(300);
-//         } else {
-//             siteHeader.removeClass('fixed-header');
-//             scrollLink.fadeOut(300);
-//         }
-//     }
-// }
-//
-// headerStyle();
+
+$(() => {
+    var $sendBtn = $('.animation_plane'),
+        $iWrapper = $('.icon-wrapper'),
+        $i1 = $('.icon-1'),
+        $i2 = $('.icon-2');
+
+    function animationEvent() {
+        var t,
+            el = document.createElement('fakeelement');
+
+        var animations = {
+            animation: 'animationend',
+            OAnimation: 'oAnimationEnd',
+            MozAnimation: 'animationend',
+            WebkitAnimation: 'webkitAnimationEnd'
+        };
+
+        for (t in animations) {
+            if (el.style[t] !== undefined) {
+                return animations[t];
+            }
+        }
+    }
+
+    $sendBtn.on('click', e => {
+        $iWrapper.css('color', '#006aff');
+        $iWrapper.addClass('icon-wrapper-animation');
+        $sendBtn.addClass('clicked');
+        $('body').css('overflow-x', 'hidden')
+        $i1.delay(300);
+        $i1.fadeTo(300, 0);
+        $i2.delay(300);
+        $i2.fadeTo(300, 1);
+    });
+
+    $sendBtn.on(animationEvent(), e => {
+        if (e.originalEvent.animationName == 'input-shadow') {
+            $sendBtn.removeClass('clicked');
+        }
+    });
+
+    $iWrapper.on(animationEvent(), e => {
+        if (e.originalEvent.animationName == 'icon-animation') {
+            $iWrapper.removeClass('icon-wrapper-animation');
+            setTimeout(reset, 5000);
+        }
+    });
+
+    function reset() {
+        $i1.fadeTo(250, 1);
+        $i2.fadeTo(250, 0);
+        $iWrapper.css('color', '#006aff');
+        $('body').css('overflow-x', 'auto')
+    }
+}); // end of document ready
+/*====================================================================
+                        Scroll Down Menu Fix
+ =====================================================================*/
+$(function () {
+    $(window).on("scroll", function () {
+        if ($(window).scrollTop() > 50) {
+            $(".main-header").addClass("scroll-down-menu");
+        } else {
+            $(".main-header").removeClass("scroll-down-menu");
+        }
+    });
+});
+/*====================================================================
+                                 End
+ =====================================================================*/
+
+/*====================================================================
+                      Show And Hide Main Menu Modal
+ =====================================================================*/
+$('#menu-open-btn').on('click', function () {
+    $('#main-menu-modal').toggleClass('menu-active');
+    $('#menu-container').toggleClass('menu-active');
+    // $(this).toggleClass('fix-btn');
+    // $("body").toggleClass("fixed");
+    // $("body").toggleClass("fix-btn");
+});
+/*====================================================================
+                                 End
+ =====================================================================*/
+
+/*====================================================================
+                      Mousemove background discount
+ =====================================================================*/
+$('.background_discount').mousemove(function (e) {
+    var moveX = (e.pageX * -1 / 30);
+    // var moveY = (e.pageY * -1 / 30);
+    $(this).css('background-position', moveX + 'px ')
+});
+/*====================================================================
+                                 End
+ =====================================================================*/
+
+/*====================================================================
+                             Scroll Spy
+ =====================================================================*/
+$(document).ready(function(){
+    $(document).ready(function(){
+        $('body').scrollspy({target: ".navigation", offset: 50});
+        $("#navigation a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    });
+});
+/*====================================================================
+                                 End
+ =====================================================================*/
